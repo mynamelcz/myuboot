@@ -1,0 +1,440 @@
+cscope 15 $HOME/work/myfunc/my_bootloader               0000001941
+	@init.c
+
+6 
+	$isBoŸFromN‹Fœsh
+(
+viod
+)
+
+8 vﬁ©ûê*
+p
+ = (volatile *)0;
+
+9 
+vÆ
+ = *
+p
+;
+
+10 *
+p
+ = 0x123456;
+
+11 if(*
+p
+ == 0x123456)
+
+13 *
+p
+ = 
+vÆ
+;
+
+17 
+	}
+}
+
+18 
+	$c›y_code_to_sdøm
+(*
+§c
+, *
+de°
+, 
+Àn
+)
+
+20 
+i
+=0;
+
+21 if(
+	`isBoŸFromN‹Fœsh
+())
+
+23 
+i
+ < 
+Àn
+)
+
+25 
+de°
+[
+i
+] = 
+§c
+[i];
+
+26 
+i
+++;
+
+31 
+	`«nd_öô
+();
+
+32 
+	`«nd_ªad
+(
+§c
+, 
+de°
+, 
+Àn
+);
+
+34 
+	}
+}
+
+36 
+	$˛ón_bss
+()
+
+39 
+	}
+}
+
+	@start.S
+
+8 
+	#WTD_CON
+ 0x53000000
+
+	)
+
+9 
+	#CLKDIVN
+ 0x4c000014
+
+	)
+
+10 
+	#MPLLCON
+ 0x4c000004
+
+	)
+
+11 
+	#S3C2440_MPLL_200MHZ
+ ((0x5c<<12)|(0x01<<4)|(0x02))
+
+	)
+
+12 
+	#MEM_CTL_BASE
+ 0480000000
+
+	)
+
+14 .
+	gãxt
+
+
+15 .
+globÆ
+ 
+_°¨t
+
+
+16 
+	g_°¨t
+:
+
+18 
+ldr
+ 
+r0
+,
+WTD_CON
+
+
+19 
+mov
+ 
+r1
+, #0
+
+20 
+°r
+ 
+	gr1
+, [
+r0
+]
+
+22 
+ldr
+ 
+	gr0
+, = 
+CLKDIVN
+
+
+23 
+mov
+ 
+r1
+, #0
+x03
+
+
+24 
+°r
+ 
+	gr1
+, [
+r0
+]
+
+26 
+mrc
+ 
+	gp15
+, 0, ,
+	gr1
+, 
+	gc1
+, 
+	gc0
+, 0
+
+27 
+‹r
+ 
+	gr1
+,Ñ1, #0
+xc0000000
+
+
+28 
+m¸
+ 
+	gp15
+, 0, ,
+	gr1
+, 
+	gc1
+, 
+	gc0
+, 0
+
+30 
+ldr
+ 
+	gr0
+, = 
+MPLLCON
+
+
+31 
+ldr
+ 
+r1
+, = 
+S3C2440_MPLL_200MHZ
+
+
+32 
+°r
+ 
+r1
+, [
+r0
+]
+
+35 
+ldr
+ 
+r0
+, = 
+MEM_CTL_BASE
+
+
+36 
+adr
+ 
+r1
+, = 
+sdøm_c⁄fig
+
+
+37 
+add
+ 
+r3
+, 
+	gr0
+, #(13*4)
+
+38 
+ldr
+ 
+	gr2
+, [
+r1
+], #4
+
+39 
+°r
+ 
+	gr2
+, [
+r0
+], #4
+
+40 
+cmp
+ 
+	gr0
+, 
+r3
+
+
+41 
+	gb√
+ 1b
+
+43 
+ldr
+ 
+	g•
+, =0x34000000
+
+44 
+mov
+ 
+r0
+, #0
+
+45 
+ldr
+ 
+	gr1
+, =
+_°¨t
+
+
+46 
+ldr
+ 
+r2
+, =
+__bss_°¨t
+
+
+47 
+sub
+ 
+r2
+, 
+	gr2
+, 
+r1
+
+
+48 
+bl
+ 
+c›y_code_to_sdøm
+
+
+50 
+bl
+ 
+˛ón_bss
+
+
+52 
+ldr
+ 
+	gÃ
+, =
+hÆt
+
+
+53 
+ldr
+ 
+pc
+, =
+maö
+
+
+54 
+hÆt
+:
+
+55 
+b
+ 
+hÆt
+
+
+56 
+sdøm_c⁄fig
+:
+
+58 .0x22011110 @ 
+BWSCON
+
+
+59 .0x00000700 @ 
+BANKCON0
+
+
+60 .0x00000700 @ 
+BANKCON1
+
+
+61 .0x00000700 @ 
+BANKCON2
+
+
+62 .0x00000700 @ 
+BANKCON3
+
+
+63 .0x00000700 @ 
+BANKCON4
+
+
+64 .0x00000700 @ 
+BANKCON5
+
+
+65 .0x00018005 @ 
+BANKCON6
+
+
+66 .0x00018005 @ 
+BANKCON7
+
+
+67 .0x008C07A3 @ 
+REFRESH
+
+
+68 .0x000000B1 @ 
+BANKSIZE
+
+
+69 .0x00000030 @ 
+MRSRB6
+
+
+70 .0x00000030 @ 
+MRSRB7
+
+
+	@
+1
+.
+1
+/usr/include
+2
+15
+init.c
+start.S
