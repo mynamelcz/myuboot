@@ -1,0 +1,306 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ATAG_ACORN	./setup.h	199;"	d
+ATAG_CMDLINE	./setup.h	192;"	d
+ATAG_CORE	./setup.h	99;"	d
+ATAG_INITRD	./setup.h	144;"	d
+ATAG_INITRD2	./setup.h	147;"	d
+ATAG_MEM	./setup.h	108;"	d
+ATAG_MEMCLK	./setup.h	209;"	d
+ATAG_NONE	./setup.h	91;"	d
+ATAG_RAMDISK	./setup.h	131;"	d
+ATAG_REVISION	./setup.h	163;"	d
+ATAG_SERIAL	./setup.h	155;"	d
+ATAG_VIDEOLFB	./setup.h	172;"	d
+ATAG_VIDEOTEXT	./setup.h	116;"	d
+CLKDIVN	./start.S	/^#define CLKDIVN         0x4c000014$/;"	d
+COMMAND_LINE_SIZE	./setup.h	33;"	d
+FLAG_RDLOAD	./setup.h	51;"	d
+FLAG_RDPROMPT	./setup.h	52;"	d
+FLAG_READONLY	./setup.h	50;"	d
+GPHCON	./uart.c	15;"	d	file:
+GPHDAT	./uart.c	16;"	d	file:
+GPHUP	./uart.c	17;"	d	file:
+MEM_CTL_BASE	./start.S	/^#define MEM_CTL_BASE    0x48000000$/;"	d
+MPLLCON	./start.S	/^#define MPLLCON         0x4c000004$/;"	d
+NAND_SECT_MASK	./init.c	9;"	d	file:
+NAND_SECT_SIZE	./init.c	8;"	d	file:
+NFADDR	./init.c	4;"	d	file:
+NFCMMD	./init.c	3;"	d	file:
+NFCONF	./init.c	1;"	d	file:
+NFCONT	./init.c	2;"	d	file:
+NFDATA	./init.c	5;"	d	file:
+NFSTAT	./init.c	6;"	d	file:
+NR_BANKS	./setup.h	259;"	d
+PCLK	./uart.c	19;"	d	file:
+RXD0READY	./uart.c	3;"	d	file:
+S3C2440_MPLL_200MHZ	./start.S	/^#define S3C2440_MPLL_200MHZ     ((0x5c<<12)|(0x01<<4)|(0x02))$/;"	d
+TACLS	./init.c	57;"	d	file:
+TWRPH0	./init.c	58;"	d	file:
+TWRPH1	./init.c	59;"	d	file:
+TXD0READY	./uart.c	2;"	d	file:
+UART_BAUD_RATE	./uart.c	21;"	d	file:
+UART_BRD	./uart.c	22;"	d	file:
+UART_CLK	./uart.c	20;"	d	file:
+UBRDIV0	./uart.c	13;"	d	file:
+UCON0	./uart.c	7;"	d	file:
+UFCON0	./uart.c	8;"	d	file:
+ULCON0	./uart.c	6;"	d	file:
+UMCON0	./uart.c	9;"	d	file:
+URXH0	./uart.c	12;"	d	file:
+UTRSTAT0	./uart.c	10;"	d	file:
+UTXH0	./uart.c	11;"	d	file:
+WTD_CON	./start.S	/^#define WTD_CON         0x53000000$/;"	d
+__ASMARM_SETUP_H	./setup.h	22;"	d
+_start	./start.S	/^_start:$/;"	l
+acorn	./setup.h	/^		struct tag_acorn	acorn;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_acorn	access:public
+adfsdrives	./setup.h	/^	    unsigned char adfsdrives;		\/* 41 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+adfsdrives	./setup.h	/^	u8 adfsdrives;$/;"	m	struct:tag_acorn	access:public
+bank	./setup.h	/^	} bank[NR_BANKS];$/;"	m	struct:meminfo	typeref:struct:meminfo::__anon6	access:public
+blue_pos	./setup.h	/^	u8		blue_pos;$/;"	m	struct:tag_videolfb	access:public
+blue_size	./setup.h	/^	u8		blue_size;$/;"	m	struct:tag_videolfb	access:public
+bytes_per_char_h	./setup.h	/^	    unsigned char bytes_per_char_h;	\/* 42 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+bytes_per_char_v	./setup.h	/^	    unsigned char bytes_per_char_v;	\/* 43 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+clean_bss	./init.c	/^void clean_bss(void)$/;"	f	signature:(void)
+cmdline	./setup.h	/^		struct tag_cmdline	cmdline;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_cmdline	access:public
+cmdline	./setup.h	/^	char	cmdline[1];	\/* this is the minimum size *\/$/;"	m	struct:tag_cmdline	access:public
+commandline	./setup.h	/^    char commandline[COMMAND_LINE_SIZE];$/;"	m	struct:param_struct	access:public
+copy_code_to_sdram	./init.c	/^void copy_code_to_sdram(unsigned char *src, unsigned char *dest, unsigned int len)$/;"	f	signature:(unsigned char *src, unsigned char *dest, unsigned int len)
+core	./setup.h	/^		struct tag_core		core;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_core	access:public
+end	./setup.h	/^	unsigned long end;$/;"	m	struct:meminfo	access:public
+flags	./setup.h	/^	    unsigned long flags;		\/* 12 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+flags	./setup.h	/^	u32 flags;		\/* bit 0 = read-only *\/$/;"	m	struct:tag_core	access:public
+flags	./setup.h	/^	u32 flags;	\/* bit 0 = load, bit 1 = prompt *\/$/;"	m	struct:tag_ramdisk	access:public
+fmemclk	./setup.h	/^	u32 fmemclk;$/;"	m	struct:tag_memclk	access:public
+for_each_tag	./setup.h	253;"	d
+getc	./uart.c	/^unsigned char getc(void)$/;"	f	signature:(void)
+green_pos	./setup.h	/^	u8		green_pos;$/;"	m	struct:tag_videolfb	access:public
+green_size	./setup.h	/^	u8		green_size;$/;"	m	struct:tag_videolfb	access:public
+halt	./start.S	/^halt:$/;"	l
+hdr	./setup.h	/^	struct tag_header hdr;$/;"	m	struct:tag	typeref:struct:tag::tag_header	access:public
+high	./setup.h	/^	u32 high;$/;"	m	struct:tag_serialnr	access:public
+initrd	./setup.h	/^		struct tag_initrd	initrd;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_initrd	access:public
+initrd_size	./setup.h	/^	    unsigned long initrd_size;		\/* 68 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+initrd_start	./setup.h	/^	    unsigned long initrd_start;		\/* 64 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+isBootFromNorFlash	./init.c	/^int isBootFromNorFlash(viod)$/;"	f
+isDigit	./uart.c	/^int isDigit(unsigned char c)$/;"	f	signature:(unsigned char c)
+isLetter	./uart.c	/^int isLetter(unsigned char c)$/;"	f	signature:(unsigned char c)
+lfb_base	./setup.h	/^	u32		lfb_base;$/;"	m	struct:tag_videolfb	access:public
+lfb_depth	./setup.h	/^	u16		lfb_depth;$/;"	m	struct:tag_videolfb	access:public
+lfb_height	./setup.h	/^	u16		lfb_height;$/;"	m	struct:tag_videolfb	access:public
+lfb_linelength	./setup.h	/^	u16		lfb_linelength;$/;"	m	struct:tag_videolfb	access:public
+lfb_size	./setup.h	/^	u32		lfb_size;$/;"	m	struct:tag_videolfb	access:public
+lfb_width	./setup.h	/^	u16		lfb_width;$/;"	m	struct:tag_videolfb	access:public
+low	./setup.h	/^	u32 low;$/;"	m	struct:tag_serialnr	access:public
+magic	./setup.h	/^	    unsigned long magic;$/;"	m	struct:param_struct::__anon3::__anon4	access:public
+main	./boot.c	/^int main(void)$/;"	f	signature:(void)
+mem	./setup.h	/^		struct tag_mem32	mem;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_mem32	access:public
+mem_fclk_21285	./setup.h	/^	    unsigned long mem_fclk_21285;       \/* 88 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+memc_control_reg	./setup.h	/^	    unsigned long memc_control_reg;	\/* 36 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+memc_control_reg	./setup.h	/^	u32 memc_control_reg;$/;"	m	struct:tag_acorn	access:public
+memclk	./setup.h	/^		struct tag_memclk	memclk;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_memclk	access:public
+meminfo	./setup.h	/^struct meminfo {$/;"	s
+meminfo::__anon6::node	./setup.h	/^		int           node;$/;"	m	struct:meminfo::__anon6	access:public
+meminfo::__anon6::size	./setup.h	/^		unsigned long size;$/;"	m	struct:meminfo::__anon6	access:public
+meminfo::__anon6::start	./setup.h	/^		unsigned long start;$/;"	m	struct:meminfo::__anon6	access:public
+meminfo::bank	./setup.h	/^	} bank[NR_BANKS];$/;"	m	struct:meminfo	typeref:struct:meminfo::__anon6	access:public
+meminfo::end	./setup.h	/^	unsigned long end;$/;"	m	struct:meminfo	access:public
+meminfo::nr_banks	./setup.h	/^	int nr_banks;$/;"	m	struct:meminfo	access:public
+n	./setup.h	/^	    char n[1024 - sizeof(unsigned long)];$/;"	m	struct:param_struct::__anon3::__anon4	access:public
+nand_addr	./init.c	/^void nand_addr(unsigned int addr)$/;"	f	signature:(unsigned int addr)
+nand_cmd	./init.c	/^void nand_cmd(unsigned char cmd)$/;"	f	signature:(unsigned char cmd)
+nand_data	./init.c	/^unsigned char nand_data(void)$/;"	f	signature:(void)
+nand_deselect	./init.c	/^void nand_deselect(void)$/;"	f	signature:(void)
+nand_init	./init.c	/^void nand_init(void)$/;"	f	signature:(void)
+nand_read	./boot.c	/^extern void nand_read(unsigned int addr, unsigned char *buf, unsigned int len);$/;"	p	file:	signature:(unsigned int addr, unsigned char *buf, unsigned int len)
+nand_read	./init.c	/^void nand_read(unsigned int addr, unsigned char *buf, unsigned int len)$/;"	f	signature:(unsigned int addr, unsigned char *buf, unsigned int len)
+nand_select	./init.c	/^void nand_select(void)$/;"	f	signature:(void)
+nand_waite_ready	./init.c	/^void nand_waite_ready(void)$/;"	f	signature:(void)
+node	./setup.h	/^		int           node;$/;"	m	struct:meminfo::__anon6	access:public
+nr_banks	./setup.h	/^	int nr_banks;$/;"	m	struct:meminfo	access:public
+nr_pages	./setup.h	/^	    unsigned long nr_pages;		\/*  4 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+page_size	./setup.h	/^	    unsigned long page_size;		\/*  0 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+pages_in_bank	./setup.h	/^	    unsigned long pages_in_bank[4];	\/* 44 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+pages_in_vram	./setup.h	/^	    unsigned long pages_in_vram;	\/* 60 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+pagesize	./setup.h	/^	u32 pagesize;$/;"	m	struct:tag_core	access:public
+param_struct	./setup.h	/^struct param_struct {$/;"	s
+param_struct::__anon1::__anon2::adfsdrives	./setup.h	/^	    unsigned char adfsdrives;		\/* 41 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::bytes_per_char_h	./setup.h	/^	    unsigned char bytes_per_char_h;	\/* 42 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::bytes_per_char_v	./setup.h	/^	    unsigned char bytes_per_char_v;	\/* 43 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::flags	./setup.h	/^	    unsigned long flags;		\/* 12 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::initrd_size	./setup.h	/^	    unsigned long initrd_size;		\/* 68 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::initrd_start	./setup.h	/^	    unsigned long initrd_start;		\/* 64 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::mem_fclk_21285	./setup.h	/^	    unsigned long mem_fclk_21285;       \/* 88 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::memc_control_reg	./setup.h	/^	    unsigned long memc_control_reg;	\/* 36 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::nr_pages	./setup.h	/^	    unsigned long nr_pages;		\/*  4 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::page_size	./setup.h	/^	    unsigned long page_size;		\/*  0 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::pages_in_bank	./setup.h	/^	    unsigned long pages_in_bank[4];	\/* 44 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::pages_in_vram	./setup.h	/^	    unsigned long pages_in_vram;	\/* 60 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::ramdisk_size	./setup.h	/^	    unsigned long ramdisk_size;		\/*  8 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::rd_start	./setup.h	/^	    unsigned long rd_start;		\/* 72 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::rootdev	./setup.h	/^	    unsigned long rootdev;		\/* 16 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::sounddefault	./setup.h	/^	    unsigned char sounddefault;		\/* 40 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::system_rev	./setup.h	/^	    unsigned long system_rev;		\/* 76 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::system_serial_high	./setup.h	/^	    unsigned long system_serial_high;	\/* 84 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::system_serial_low	./setup.h	/^	    unsigned long system_serial_low;	\/* 80 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::video_num_cols	./setup.h	/^	    unsigned long video_num_cols;	\/* 20 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::video_num_rows	./setup.h	/^	    unsigned long video_num_rows;	\/* 24 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::video_x	./setup.h	/^	    unsigned long video_x;		\/* 28 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::__anon2::video_y	./setup.h	/^	    unsigned long video_y;		\/* 32 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::s	./setup.h	/^	} s;$/;"	m	union:param_struct::__anon1	typeref:struct:param_struct::__anon1::__anon2	access:public
+param_struct::__anon1::unused	./setup.h	/^	char unused[256];$/;"	m	union:param_struct::__anon1	access:public
+param_struct::__anon3::__anon4::magic	./setup.h	/^	    unsigned long magic;$/;"	m	struct:param_struct::__anon3::__anon4	access:public
+param_struct::__anon3::__anon4::n	./setup.h	/^	    char n[1024 - sizeof(unsigned long)];$/;"	m	struct:param_struct::__anon3::__anon4	access:public
+param_struct::__anon3::paths	./setup.h	/^	char paths[8][128];$/;"	m	union:param_struct::__anon3	access:public
+param_struct::__anon3::s	./setup.h	/^	} s;$/;"	m	union:param_struct::__anon3	typeref:struct:param_struct::__anon3::__anon4	access:public
+param_struct::commandline	./setup.h	/^    char commandline[COMMAND_LINE_SIZE];$/;"	m	struct:param_struct	access:public
+param_struct::u1	./setup.h	/^    } u1;$/;"	m	struct:param_struct	typeref:union:param_struct::__anon1	access:public
+param_struct::u2	./setup.h	/^    } u2;$/;"	m	struct:param_struct	typeref:union:param_struct::__anon3	access:public
+params	./boot.c	/^static struct tag *params;$/;"	v	typeref:struct:tag	file:
+parse	./setup.h	/^	int (*parse)(const struct tag *);$/;"	m	struct:tagtable	access:public
+paths	./setup.h	/^	char paths[8][128];$/;"	m	union:param_struct::__anon3	access:public
+putc	./uart.c	/^void putc(unsigned char c)$/;"	f	signature:(unsigned char c)
+puts	./boot.c	/^extern void puts(char *str);$/;"	p	file:	signature:(char *str)
+puts	./uart.c	/^void puts(char *str)$/;"	f	signature:(char *str)
+ramdisk	./setup.h	/^		struct tag_ramdisk	ramdisk;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_ramdisk	access:public
+ramdisk_size	./setup.h	/^	    unsigned long ramdisk_size;		\/*  8 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+rd_start	./setup.h	/^	    unsigned long rd_start;		\/* 72 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+red_pos	./setup.h	/^	u8		red_pos;$/;"	m	struct:tag_videolfb	access:public
+red_size	./setup.h	/^	u8		red_size;$/;"	m	struct:tag_videolfb	access:public
+rev	./setup.h	/^	u32 rev;$/;"	m	struct:tag_revision	access:public
+revision	./setup.h	/^		struct tag_revision	revision;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_revision	access:public
+rootdev	./setup.h	/^	    unsigned long rootdev;		\/* 16 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+rootdev	./setup.h	/^	u32 rootdev;$/;"	m	struct:tag_core	access:public
+rsvd_pos	./setup.h	/^	u8		rsvd_pos;$/;"	m	struct:tag_videolfb	access:public
+rsvd_size	./setup.h	/^	u8		rsvd_size;$/;"	m	struct:tag_videolfb	access:public
+s	./setup.h	/^	} s;$/;"	m	union:param_struct::__anon1	typeref:struct:param_struct::__anon1::__anon2	access:public
+s	./setup.h	/^	} s;$/;"	m	union:param_struct::__anon3	typeref:struct:param_struct::__anon3::__anon4	access:public
+sdram_config	./start.S	/^sdram_config:$/;"	l
+serialnr	./setup.h	/^		struct tag_serialnr	serialnr;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_serialnr	access:public
+setup_commandline_tag	./boot.c	/^void setup_commandline_tag(char *cmdline)$/;"	f	signature:(char *cmdline)
+setup_end_tag	./boot.c	/^void setup_end_tag(void)$/;"	f	signature:(void)
+setup_memory_tag	./boot.c	/^void setup_memory_tag(void)$/;"	f	signature:(void)
+setup_start_tag	./boot.c	/^void setup_start_tag(void)$/;"	f	signature:(void)
+size	./setup.h	/^		unsigned long size;$/;"	m	struct:meminfo::__anon6	access:public
+size	./setup.h	/^	u32	size;$/;"	m	struct:tag_mem32	access:public
+size	./setup.h	/^	u32 size;	\/* decompressed ramdisk size in _kilo_ bytes *\/$/;"	m	struct:tag_ramdisk	access:public
+size	./setup.h	/^	u32 size;	\/* size of compressed ramdisk image in bytes *\/$/;"	m	struct:tag_initrd	access:public
+size	./setup.h	/^	u32 size;$/;"	m	struct:tag_header	access:public
+sounddefault	./setup.h	/^	    unsigned char sounddefault;		\/* 40 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+sounddefault	./setup.h	/^	u8 sounddefault;$/;"	m	struct:tag_acorn	access:public
+start	./setup.h	/^		unsigned long start;$/;"	m	struct:meminfo::__anon6	access:public
+start	./setup.h	/^	u32	start;	\/* physical start address *\/$/;"	m	struct:tag_mem32	access:public
+start	./setup.h	/^	u32 start;	\/* physical start address *\/$/;"	m	struct:tag_initrd	access:public
+start	./setup.h	/^	u32 start;	\/* starting block of floppy-based RAM disk image *\/$/;"	m	struct:tag_ramdisk	access:public
+strcpy	./boot.c	/^void strcpy(char *dest, char *src)$/;"	f	signature:(char *dest, char *src)
+strlen	./boot.c	/^unsigned int strlen(char *str)$/;"	f	signature:(char *str)
+system_rev	./setup.h	/^	    unsigned long system_rev;		\/* 76 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+system_serial_high	./setup.h	/^	    unsigned long system_serial_high;	\/* 84 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+system_serial_low	./setup.h	/^	    unsigned long system_serial_low;	\/* 80 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+tag	./setup.h	/^	u32 tag;$/;"	m	struct:tag_header	access:public
+tag	./setup.h	/^	u32 tag;$/;"	m	struct:tagtable	access:public
+tag	./setup.h	/^struct tag {$/;"	s
+tag::__anon5::acorn	./setup.h	/^		struct tag_acorn	acorn;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_acorn	access:public
+tag::__anon5::cmdline	./setup.h	/^		struct tag_cmdline	cmdline;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_cmdline	access:public
+tag::__anon5::core	./setup.h	/^		struct tag_core		core;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_core	access:public
+tag::__anon5::initrd	./setup.h	/^		struct tag_initrd	initrd;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_initrd	access:public
+tag::__anon5::mem	./setup.h	/^		struct tag_mem32	mem;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_mem32	access:public
+tag::__anon5::memclk	./setup.h	/^		struct tag_memclk	memclk;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_memclk	access:public
+tag::__anon5::ramdisk	./setup.h	/^		struct tag_ramdisk	ramdisk;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_ramdisk	access:public
+tag::__anon5::revision	./setup.h	/^		struct tag_revision	revision;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_revision	access:public
+tag::__anon5::serialnr	./setup.h	/^		struct tag_serialnr	serialnr;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_serialnr	access:public
+tag::__anon5::videolfb	./setup.h	/^		struct tag_videolfb	videolfb;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_videolfb	access:public
+tag::__anon5::videotext	./setup.h	/^		struct tag_videotext	videotext;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_videotext	access:public
+tag::hdr	./setup.h	/^	struct tag_header hdr;$/;"	m	struct:tag	typeref:struct:tag::tag_header	access:public
+tag::u	./setup.h	/^	} u;$/;"	m	struct:tag	typeref:union:tag::__anon5	access:public
+tag_acorn	./setup.h	/^struct tag_acorn {$/;"	s
+tag_acorn::adfsdrives	./setup.h	/^	u8 adfsdrives;$/;"	m	struct:tag_acorn	access:public
+tag_acorn::memc_control_reg	./setup.h	/^	u32 memc_control_reg;$/;"	m	struct:tag_acorn	access:public
+tag_acorn::sounddefault	./setup.h	/^	u8 sounddefault;$/;"	m	struct:tag_acorn	access:public
+tag_acorn::vram_pages	./setup.h	/^	u32 vram_pages;$/;"	m	struct:tag_acorn	access:public
+tag_cmdline	./setup.h	/^struct tag_cmdline {$/;"	s
+tag_cmdline::cmdline	./setup.h	/^	char	cmdline[1];	\/* this is the minimum size *\/$/;"	m	struct:tag_cmdline	access:public
+tag_core	./setup.h	/^struct tag_core {$/;"	s
+tag_core::flags	./setup.h	/^	u32 flags;		\/* bit 0 = read-only *\/$/;"	m	struct:tag_core	access:public
+tag_core::pagesize	./setup.h	/^	u32 pagesize;$/;"	m	struct:tag_core	access:public
+tag_core::rootdev	./setup.h	/^	u32 rootdev;$/;"	m	struct:tag_core	access:public
+tag_header	./setup.h	/^struct tag_header {$/;"	s
+tag_header::size	./setup.h	/^	u32 size;$/;"	m	struct:tag_header	access:public
+tag_header::tag	./setup.h	/^	u32 tag;$/;"	m	struct:tag_header	access:public
+tag_initrd	./setup.h	/^struct tag_initrd {$/;"	s
+tag_initrd::size	./setup.h	/^	u32 size;	\/* size of compressed ramdisk image in bytes *\/$/;"	m	struct:tag_initrd	access:public
+tag_initrd::start	./setup.h	/^	u32 start;	\/* physical start address *\/$/;"	m	struct:tag_initrd	access:public
+tag_mem32	./setup.h	/^struct tag_mem32 {$/;"	s
+tag_mem32::size	./setup.h	/^	u32	size;$/;"	m	struct:tag_mem32	access:public
+tag_mem32::start	./setup.h	/^	u32	start;	\/* physical start address *\/$/;"	m	struct:tag_mem32	access:public
+tag_member_present	./setup.h	246;"	d
+tag_memclk	./setup.h	/^struct tag_memclk {$/;"	s
+tag_memclk::fmemclk	./setup.h	/^	u32 fmemclk;$/;"	m	struct:tag_memclk	access:public
+tag_next	./setup.h	250;"	d
+tag_ramdisk	./setup.h	/^struct tag_ramdisk {$/;"	s
+tag_ramdisk::flags	./setup.h	/^	u32 flags;	\/* bit 0 = load, bit 1 = prompt *\/$/;"	m	struct:tag_ramdisk	access:public
+tag_ramdisk::size	./setup.h	/^	u32 size;	\/* decompressed ramdisk size in _kilo_ bytes *\/$/;"	m	struct:tag_ramdisk	access:public
+tag_ramdisk::start	./setup.h	/^	u32 start;	\/* starting block of floppy-based RAM disk image *\/$/;"	m	struct:tag_ramdisk	access:public
+tag_revision	./setup.h	/^struct tag_revision {$/;"	s
+tag_revision::rev	./setup.h	/^	u32 rev;$/;"	m	struct:tag_revision	access:public
+tag_serialnr	./setup.h	/^struct tag_serialnr {$/;"	s
+tag_serialnr::high	./setup.h	/^	u32 high;$/;"	m	struct:tag_serialnr	access:public
+tag_serialnr::low	./setup.h	/^	u32 low;$/;"	m	struct:tag_serialnr	access:public
+tag_size	./setup.h	251;"	d
+tag_videolfb	./setup.h	/^struct tag_videolfb {$/;"	s
+tag_videolfb::blue_pos	./setup.h	/^	u8		blue_pos;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::blue_size	./setup.h	/^	u8		blue_size;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::green_pos	./setup.h	/^	u8		green_pos;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::green_size	./setup.h	/^	u8		green_size;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::lfb_base	./setup.h	/^	u32		lfb_base;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::lfb_depth	./setup.h	/^	u16		lfb_depth;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::lfb_height	./setup.h	/^	u16		lfb_height;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::lfb_linelength	./setup.h	/^	u16		lfb_linelength;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::lfb_size	./setup.h	/^	u32		lfb_size;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::lfb_width	./setup.h	/^	u16		lfb_width;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::red_pos	./setup.h	/^	u8		red_pos;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::red_size	./setup.h	/^	u8		red_size;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::rsvd_pos	./setup.h	/^	u8		rsvd_pos;$/;"	m	struct:tag_videolfb	access:public
+tag_videolfb::rsvd_size	./setup.h	/^	u8		rsvd_size;$/;"	m	struct:tag_videolfb	access:public
+tag_videotext	./setup.h	/^struct tag_videotext {$/;"	s
+tag_videotext::video_cols	./setup.h	/^	u8		video_cols;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::video_ega_bx	./setup.h	/^	u16		video_ega_bx;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::video_isvga	./setup.h	/^	u8		video_isvga;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::video_lines	./setup.h	/^	u8		video_lines;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::video_mode	./setup.h	/^	u8		video_mode;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::video_page	./setup.h	/^	u16		video_page;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::video_points	./setup.h	/^	u16		video_points;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::x	./setup.h	/^	u8		x;$/;"	m	struct:tag_videotext	access:public
+tag_videotext::y	./setup.h	/^	u8		y;$/;"	m	struct:tag_videotext	access:public
+tagtable	./setup.h	/^struct tagtable {$/;"	s
+tagtable::parse	./setup.h	/^	int (*parse)(const struct tag *);$/;"	m	struct:tagtable	access:public
+tagtable::tag	./setup.h	/^	u32 tag;$/;"	m	struct:tagtable	access:public
+u	./setup.h	/^	} u;$/;"	m	struct:tag	typeref:union:tag::__anon5	access:public
+u1	./setup.h	/^    } u1;$/;"	m	struct:param_struct	typeref:union:param_struct::__anon1	access:public
+u16	./setup.h	/^typedef unsigned short u16;$/;"	t
+u2	./setup.h	/^    } u2;$/;"	m	struct:param_struct	typeref:union:param_struct::__anon3	access:public
+u32	./setup.h	/^typedef unsigned long  u32;$/;"	t
+u8	./setup.h	/^typedef unsigned char  u8;$/;"	t
+uart0_init	./boot.c	/^extern void uart0_init(void);$/;"	p	file:	signature:(void)
+uart0_init	./uart.c	/^void uart0_init(void)$/;"	f	signature:(void)
+unused	./setup.h	/^	char unused[256];$/;"	m	union:param_struct::__anon1	access:public
+video_cols	./setup.h	/^	u8		video_cols;$/;"	m	struct:tag_videotext	access:public
+video_ega_bx	./setup.h	/^	u16		video_ega_bx;$/;"	m	struct:tag_videotext	access:public
+video_isvga	./setup.h	/^	u8		video_isvga;$/;"	m	struct:tag_videotext	access:public
+video_lines	./setup.h	/^	u8		video_lines;$/;"	m	struct:tag_videotext	access:public
+video_mode	./setup.h	/^	u8		video_mode;$/;"	m	struct:tag_videotext	access:public
+video_num_cols	./setup.h	/^	    unsigned long video_num_cols;	\/* 20 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+video_num_rows	./setup.h	/^	    unsigned long video_num_rows;	\/* 24 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+video_page	./setup.h	/^	u16		video_page;$/;"	m	struct:tag_videotext	access:public
+video_points	./setup.h	/^	u16		video_points;$/;"	m	struct:tag_videotext	access:public
+video_x	./setup.h	/^	    unsigned long video_x;		\/* 28 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+video_y	./setup.h	/^	    unsigned long video_y;		\/* 32 *\/$/;"	m	struct:param_struct::__anon1::__anon2	access:public
+videolfb	./setup.h	/^		struct tag_videolfb	videolfb;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_videolfb	access:public
+videotext	./setup.h	/^		struct tag_videotext	videotext;$/;"	m	union:tag::__anon5	typeref:struct:tag::__anon5::tag_videotext	access:public
+vram_pages	./setup.h	/^	u32 vram_pages;$/;"	m	struct:tag_acorn	access:public
+x	./setup.h	/^	u8		x;$/;"	m	struct:tag_videotext	access:public
+y	./setup.h	/^	u8		y;$/;"	m	struct:tag_videotext	access:public
