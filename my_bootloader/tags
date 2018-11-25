@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CLKDIVN	./start.S	/^#define CLKDIVN         0x4c000014$/;"	d
+MEM_CTL_BASE	./start.S	/^#define MEM_CTL_BASE    0480000000$/;"	d
+MPLLCON	./start.S	/^#define MPLLCON         0x4c000004$/;"	d
+S3C2440_MPLL_200MHZ	./start.S	/^#define S3C2440_MPLL_200MHZ     ((0x5c<<12)|(0x01<<4)|(0x02))$/;"	d
+WTD_CON	./start.S	/^#define WTD_CON         0x53000000$/;"	d
+_start	./start.S	/^_start:$/;"	l
+clean_bss	./init.c	/^void clean_bss(void)$/;"	f	signature:(void)
+copy_code_to_sdram	./init.c	/^int copy_code_to_sdram(unsigned char *src, unsigned char *dest, unsigned int len)$/;"	f	signature:(unsigned char *src, unsigned char *dest, unsigned int len)
+halt	./start.S	/^halt:$/;"	l
+isBootFromNorFlash	./init.c	/^int isBootFromNorFlash(viod)$/;"	f
+sdram_config	./start.S	/^sdram_config:$/;"	l
