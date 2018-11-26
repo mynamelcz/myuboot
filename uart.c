@@ -94,7 +94,15 @@ int isLetter(unsigned char c)
         return 0;
 }
 
-
+void puthex32(unsigned int val)
+{
+    int i;
+    puts("0x");
+    for(i=8; i>0; i--)
+    {
+       putc("0123456789abcdef"[(val>>((i-1)*4))&0x0f]);
+    }
+}
 
 
 

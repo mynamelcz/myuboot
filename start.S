@@ -9,6 +9,7 @@
 #define CLKDIVN         0x4c000014
 #define MPLLCON         0x4c000004
 #define S3C2440_MPLL_200MHZ     ((0x5c<<12)|(0x01<<4)|(0x02))
+#define S3C2440_MPLL_400MHZ     ((0x5c<<12)|(0x01<<4)|(0x01))
 #define MEM_CTL_BASE    0x48000000
 
 .text
@@ -20,7 +21,7 @@ _start:
         str r1, [r0]
 /* 设置时钟 */
         ldr r0, = CLKDIVN          /*时钟 CLKDIVN地址*/
-        mov r1, #0x03
+        mov r1, #0x05
         str r1, [r0]
 /* 设置CPU模式*/
         mrc p15, 0, r1, c1, c0, 0 /*读寄存器*/ 
@@ -28,8 +29,12 @@ _start:
         mcr p15, 0, r1, c1, c0, 0 /*写寄存器*/
 /* 设置时钟 */
         ldr r0, = MPLLCON 
-        ldr r1, = S3C2440_MPLL_200MHZ     
+        ldr r1, = S3C2440_MPLL_400MHZ     
         str r1, [r0]
+/*启动 icache   参考uboot代码 cpu/arm920t/cpu.c */
+        mrc p15, 0, r0, c1, c0, 0   @ read control reg
+        orr r0, r0, #(1<<12)    
+        mcr p15, 0, r0, c1, c0, 0 
 /* 初始化SDRAM */
         ldr	r0, =MEM_CTL_BASE    /*寄存器 基址*/
         adr r1, sdram_config    /*数据起始地址*/

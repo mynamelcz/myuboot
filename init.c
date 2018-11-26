@@ -81,8 +81,8 @@ void nand_cmd(unsigned char cmd)
 /*3.发出地址 分5次*/
 void nand_addr(unsigned int addr)
 {
-    unsigned int col  = addr / NAND_SECT_SIZE;     /*页内地址  每页2k*/
-    unsigned int page = addr & NAND_SECT_MASK;     /*页地址*/
+    unsigned int page  = addr / NAND_SECT_SIZE;       /*页地址*/
+    unsigned int col = addr & NAND_SECT_MASK;         /*页内地址  每页2k*/
     volatile int i;
     NFADDR = col & 0xff; 
     for(i=0; i<10; i++);    /*延时操作*/

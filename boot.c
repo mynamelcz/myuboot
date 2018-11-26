@@ -10,7 +10,7 @@ static struct tag *params;
 extern void puts(char *str);
 extern void uart0_init(void);
 extern void nand_read(unsigned int addr, unsigned char *buf, unsigned int len);
-
+extern void puthex32(unsigned int val);
 
 void setup_start_tag(void)
 {
@@ -67,19 +67,19 @@ int main(void)
     /*0.设置串口*/
     uart0_init();
     /*1. 从 NAMD FLASH 读内核到内存*/
-    puts("Copy kernel from nand\n");
+    puts("Copy kernel from nand\r\n");
     nand_read(0x60000+64,(unsigned char *)0x30008000, 0x200000);      /*先保证flash内已经烧录内核*/ 
     /*2. 设置参数*/
-    puts("Set params\n");
+    puts("Set params\r\n");
     setup_start_tag();
     setup_memory_tag();
     setup_commandline_tag("noinitrd root=/dev/nfs nfsroot=192.168.1.114:/work/nfs_root/fs_mini_mdev ip=192.168.1.110:192.168.1.114:192.168.1.1:255.255.255.0::eth0:off init=/linuxrc console=ttySAC0");
     setup_end_tag();
     /*3. 跳转执行*/
-    puts("Boot kernel\n");
+    puts("Boot kernel\r\n");
     theKernel = (void(*)(int, int, unsigned int))0x30008000;  /*内核位置 开始启动*/
     theKernel(0, 362, 0x30000100);                    /*arch: 机器ID */
-    puts("Boot  Error!\n");
+    puts("Boot  Error!\r\n");
     return -1;
 
 
